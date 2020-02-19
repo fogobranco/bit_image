@@ -43,7 +43,7 @@ COPY package.json package.json
 RUN npm install \
     && npm cache clean --force
 COPY . .
-EXPOSE 3000
+EXPOSE 3001
 CMD ["tini", "--", "node", "./bin/www"]
 
 
